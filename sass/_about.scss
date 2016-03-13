@@ -1,0 +1,157 @@
+section#about {
+	padding-top:8rem;
+	div.container {
+		max-width: 40rem;
+	}
+	h2 {
+		text-align: left;
+		padding-top: 2rem;
+		margin:0;
+	}
+	li {
+		padding: 1rem;
+		font-size: 2rem;
+	}
+	p {
+		margin: 0;
+	}
+	p.tagline {
+		font-size: 2rem;
+		text-align: left;
+		width: 80%;
+	}
+	p.title {
+		font-family: 'Source Code Pro';
+		font-weight: bold;
+		color: $purple;
+	}
+	div.about-me {
+		display: flex;
+		flex-flow:row-wrap;
+		align-items:center;
+		div.profile-pic,
+		div.profile-text {
+			flex:1 0 50%;
+		}
+	}
+	div.social-menu {
+		position: absolute;
+		bottom:0;
+		right:0;
+		padding:0 1rem 2rem 0;
+		a {
+			background-color: #F9F9F9;
+		}
+	}
+	div.profile-pic {
+		position: relative;
+		background-color: #F9F9F9;
+		text-align: center;
+		padding: 10rem;
+	}
+	img {
+		border-radius: 50%;
+		box-shadow:0 5px 10px #E7E7E7;
+	}
+	div.profile-text {
+		font-family: 'Open Sans', sans-serif;
+		}
+	div.about-intro, 
+	div.about-skills,
+	div.view-resume {
+		margin:0 0 1rem 2rem;
+		display: flex;
+		flex-flow: row wrap;
+		div.title {
+			font-weight: bold;
+			font-size: 1.5rem;
+			width:25%;
+		}
+		div.text {
+			width:75%;
+			padding-left:1rem;
+		}
+	}
+	div.about-skills {
+		font-weight: bold;
+	}
+	div.about-skills p.skills::before {
+		content:'> ';
+		left:0;
+		top:0;
+		color:$purple;
+		font-weight: bold;
+	}
+	div.view-resume {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+//******************************
+// Media Queries
+//******************************
+@media (max-width: 1050px) {
+	section#about {
+		div.about-me {
+			display: flex;
+			flex-flow:row-wrap;
+			align-items:center;
+			div.profile-pic,
+			div.profile-text {
+				flex:1 0 50%;
+			}
+		}
+		div.profile-pic {
+			padding: 10rem;
+		}
+		div.about-intro, 
+		div.about-skills,
+		div.view-resume {
+			div.title {
+				font-size: 1.5rem;
+				padding:2rem 0;
+				width:100%;
+			}
+			div.text {
+				width:100%;
+				padding-left:0;
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	section#about {
+		div.container {
+			max-width: 70rem;
+			text-align: center;
+		}
+		div.about-me {
+			display: block;
+		}
+		div.profile-pic {
+			padding: 4rem;
+		}
+		div.view-resume div.title {
+			padding:1rem;
+		}
+		div.social-menu {
+			padding-right:4rem;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	section#about {
+		div.about-me div.wrapper {
+			padding-left: 4rem;
+			padding-right: 4rem;
+		}
+	}
+}
+
+
+
+
+

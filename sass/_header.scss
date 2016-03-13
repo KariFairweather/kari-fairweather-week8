@@ -1,0 +1,30 @@
+header {
+	font-family: 'Source Code Pro';
+	div.logo-header {
+		padding-top: 1rem;
+		width: 6rem;
+	}
+	nav {
+		background-color: #FFF;
+	}
+	div.wrapper {
+		padding: 1rem 2rem 1rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items:flex-end;
+	}	 
+	.hidden {
+		display: none;
+	}
+}
+
+//******************************
+// Media Queries 
+//******************************
+
+
+
+
+
+

@@ -6,6 +6,9 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
+$yellow: #F0C808;
+$purple: #7B1E7A;
+$black: #1C1C1C;
 
 @import 'normalize';
 @import 'typography';
@@ -13,23 +16,42 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'header';
+@import 'contact';
+@import 'hero';
+@import 'headhesive';
+@import 'portfolio';
+@import 'about';
 /*
 ====================================
 Default Styling
 ====================================
 */
+html {
+	font-size: 62.5%
+}
+
+body {
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #1C1C1C;
+	// color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
 
 img {
 	max-width: 100%;
 }
 
-body {
-	color: #333;
-}
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:0 3rem;
 }
 
 .content {

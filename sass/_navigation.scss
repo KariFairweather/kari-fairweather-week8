@@ -1,14 +1,15 @@
-ul.menu {
+ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	li {
 		display: inline;
-		margin-right: 10px;
+		// margin-right: 10px;
 		a {
 			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			// padding: 10px;
+			background: #FFF;
+			color: #000;
 		}
 	}
 }

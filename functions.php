@@ -22,7 +22,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'contact' => 'Contact Menu'
 	) );
 
 	/*
@@ -46,6 +47,7 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500|Open+Sans:400,600');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -276,3 +278,13 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+/* hackeryou_get_thumbnail_url: Return current post thumbnail url*/
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID); 
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
+}
+
+//* Hide black wp admin bar at top of edit screen
+add_filter( 'show_admin_bar', '__return_false' );

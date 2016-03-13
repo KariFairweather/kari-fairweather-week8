@@ -1,7 +1,17 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="wrapper">
+    <div class="footer-text">
+        <div class="social-menu">
+         <?php wp_nav_menu( array(
+           'container' => false,
+           'theme_location' => 'contact'
+           )); ?>
+        </div><!-- social-menu -->
+        <p class="email"> <?php the_field('email'); ?> </p>
+    	<p class="copyright"> <?php the_field('copyright'); ?> <?php echo date('Y'); ?></p>
+    </div><!-- footer-text -->
   </div>
+
 </footer>
 
 <script>
